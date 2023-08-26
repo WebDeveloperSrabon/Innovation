@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&family=Roboto:wght@300&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+}
+a,
+p {
+  font-family: "Roboto", sans-serif;
+  list-style-type: none !important;
+}
+
+/* header section design start  */
+
+.logoDiv {
+  position: relative;
+  z-index: 10;
+}
+
+#navbarNav ul li {
+  padding: 0px 10px;
+}
+#navbarNav ul li a:hover {
+  color: #ff6058 !important;
+}
+
+/* header section design Ends  */
+
+/* hero section design start */
+.hero-section {
+  background-image: url("../img/Hero.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  max-height: 960px;
+  position: relative;
+  z-index: 1;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+
+.hero_content {
+  position: relative;
+  z-index: 111;
+}
+.hero_content h1 {
+  /* font-size: 75px; */
+}
+/* hero section design ends */
+
+/* section 1 design start */
+.project_box {
+  height: 170px !important;
+}
+.project_box span:nth-child(1) {
+  font-size: 60px;
+  font-weight: bold;
+}
+.project_box span:nth-child(2) {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* section 1 design Ends */
+
+/* about section design start */
+.aboutLeftContent h5 {
+  font-size: 18px;
+  font-size: 500;
+  letter-spacing: 3px;
+}
+
+.hash {
+  font-size: 35px;
+  color: #73a4aa;
+}
+/* about section design Ends */
+
+/* why choose us section design start */
+.whyChooce {
+  background-color: #f7f7f7;
+  background-image: linear-gradient(to bottom, #f7f7f7 65%, #fff 35%);
+}
+
+.whyChooseCol {
+  position: relative;
+}
+.whyChooseCol h5 {
+  position: absolute;
+  left: 10%;
+  bottom: 15px;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.whyChooseCol h5:hover {
+  background-color: #ff6058 !important;
+}
+
+/* why choose us section design Ends */
+
+/* service section start */
+.whybtn {
+  padding: 10px 25px;
+  font-size: 14px;
+}
+.review_bg {
+  background-color: #f9f9f9;
+  transition: all 0.2s;
+}
+.review_bg:hover {
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.7);
+}
+/* service section Ends */
+
+/* review section design start */
+
+.mainReview {
+  height: 700px;
+  max-height: 800px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-image: url("../img/ReviewHero.jpg");
+  position: relative;
+}
+.mainReview::before {
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    110deg,
+    rgba(0, 0, 0, 0.7) 62%,
+    rgba(255, 255, 255, 0) 38%
+  );
+  position: absolute;
+}
+.TESTIMONIAL {
+  position: relative;
+  z-index: 99;
+  margin-left: 16.5rem !important;
+}
+.TESTIMONIAL h1 {
+}
+.TESTIMONIAL h6 {
+  /* margin-top: 37px !important; */
+}
+/* review section design Ends */
+
+/* slider button resize */
+.carousel-control-next-icon {
+  color: #ff6058 !important;
+}
+.carousel-control-prev-icon {
+  /* margin-right: 3rem; */
+  color: #ff6058 !important;
+}
+
+/* Team section design start */
+
+.TeamSection h5 {
+  font-size: 18px;
+  letter-spacing: 3px;
+}
+.TeamSection i {
+  font-size: 20px;
+  margin: 0px 10px;
+  cursor: pointer;
+}
+.fa-brands.fa-facebook {
+  color: #1181ed;
+}
+.fa-brands.fa-twitter {
+  color: rgb(63, 125, 241);
+}
+.fa-brands.fa-instagram {
+  color: rgb(219, 136, 11);
+}
+.fa-brands.fa-linkedin {
+  color: #087bb7;
+  font-size: 30px;
+}
+
+/* offcanvas design  */
+.facebook {
+  font-size: 30px;
+}
+.twitter {
+  font-size: 30px;
+}
+
+/* offcanvas design  */
+
+/* Team section design Ends */
+
+/* footer design start */
+.footerUl li {
+  list-style-type: none;
+  margin: 0px 0px !important;
+}
+.footerUl li a {
+  text-decoration: none;
+  margin: 0px 10px !important;
+}
+
+.subscribe {
+  border-radius: 50px 0px 0px 50px;
+}
+.btn-subscribe {
+  border-radius: 0px 50px 50px 0px;
+}
+/* footer design Ends */
+
+/* responsive mobile */
+
+@media screen and (max-width: 768px) {
+  .TESTIMONIAL {
+    margin-left: 0px !important;
+  }
+  .customSlider {
+    width: auto;
+  }
+  .mainReview::before {
+    background-image: none;
+  }
+  .footerUl {
+    display: block !important;
+    margin: 10px 0px !important;
+  }
+  .customSlider.w-50.text-white.ms-auto.bg-dark.p-4.rounded {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .input_container {
+    width: 30rem !important;
+  }
+
+  .whyChooseCol h5 {
+    /* left: 2%; */
+  }
+}
